@@ -13,8 +13,9 @@ fetch('https://fakestoreapi.com/products?limit=10')
             <div class='card'>
                 <img src="${object.image}" alt="${object.title}">
                 <div class="text">
-                    <h2>${object.title}</h2>
-                    <h3>$${object.price}</h3>
+                    <h4>${object.title}</h4>
+                    <h5>$${object.price}</h5>
+                    <h5>Rating: ${object.rating.rate}<br> (${object.rating.count} reviews)</h5>
                 </div>
             </div>
             `;
